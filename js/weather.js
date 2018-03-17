@@ -8,6 +8,9 @@ function weatherCallback() {
         var table = $("<table><tr><th>Weather Today</th></tr>");
         table.append("<tr><td>City:</td><td>" + result.name + "</td></tr>");
         table.append("<tr><td>Temperature:</td><td>" + result.main.temp + "°C</td></tr>");
+        table.append("<tr><td>Wind:</td><td>" + result.wind.speed + "km/h</td></tr>");
+        table.append("<tr><td>Clouds:</td><td>" + result.clouds.all + "%</td></tr>");
+        table.append("<tr><td>Humidity:</td><td>" + result.main.humidity + "%</td></tr>");
         $("#weather").html(table);
       },
     });
