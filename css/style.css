@@ -15,5 +15,64 @@ section {
 #hero {
     background: url(../img/background.png) top center no-repeat;
     background-size: 100%;
-    padding-bottom: 25%;
+    padding-bottom: 35%;
+    position: relative;
 }
+
+#weather {
+    position: absolute;
+    background-color: rgba(25, 5, 0, 0.3);
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+    left: -12px;
+}
+.carousel-control.right {
+    right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+}
+.carousel-indicators .active {
+    background: #333333;
+}
+
+#box {
+    background-color: transparent;
+    height: 10%;
+}
+
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("button").click(function(){
+            $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&appid=88fcfe1ca88c2217199672c30ffd292a", function(result){
+              $("#city").text(result.name);
+            });
+      });
+
+    </script>
+</head>
+<body>
+
+<button>Get JSON data</button>
+
+<div id="city"></div>
+
+</body>
+</html>
