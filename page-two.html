@@ -1,10 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Example Project with Ajax</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
+
 <body>
 
+<nav class="navbar navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="./index.html">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="./page-one.html">About Lublin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="./page-two.html">test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#test">test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#test">test</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+    </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="Carousel" class="carousel slide" data-ride="carousel" role="listbox">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/1.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/3.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/4.jpg" alt="Image" style="max-width:100%;"></a></div>
+                        </div><!--.row-->
+                    </div><!--.item-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/6.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/7.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/8.jpg" alt="Image" style="max-width:100%;"></a></div>
+                        </div><!--.row-->
+                    </div><!--.item-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/7.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/2.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/3.jpg" alt="Image" style="max-width:100%;"></a></div>
+                            <div class="col-md-3"><a href="#" class="thumbnail"><img src="./img/slider/8.jpg" alt="Image" style="max-width:100%;"></a></div>
+                        </div><!--.row-->
+                    </div><!--.item-->
+
+                </div><!--.carousel-inner-->
+                <a class="carousel-control-prev" href="#Carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#Carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div><!--.Carousel-->
+
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+  // Initialize tooltip component
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+  // Initialize popover component
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+
+
+
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Lorem ipsum</p>
+    </div>
+    <!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</footer>
 </body>
 </html>
