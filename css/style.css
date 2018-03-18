@@ -22,12 +22,12 @@ section {
 #weather {
     position: absolute;
     background-color: rgba(25, 5, 0, 0.3);
-    left: 40%;
-    right: 40%;
+    left: 0;
+    right: 0;
     color: white;
 }
 
-#weather th {
+#weather table th {
     justify-content: center;
 }
 
