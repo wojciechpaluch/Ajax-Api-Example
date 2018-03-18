@@ -22,11 +22,9 @@ section {
 #weather {
     position: absolute;
     background-color: rgba(25, 5, 0, 0.3);
-    left: 0;
-    right: 0;
+    left: 40%;
+    right: 40%;
     color: white;
-    text-align: center;
-    justify-content: center;
 }
 
 #weather th {
@@ -37,7 +35,7 @@ section {
     margin-bottom: 0;
     padding: 0 40px 30px 40px;
 }
-/* The controlsy */
+
 .carousel-control {
     left: -12px;
     height: 40px;
@@ -50,19 +48,21 @@ section {
 .carousel-control.right {
     right: -12px;
 }
-/* The indicators */
+
 .carousel-indicators {
     right: 50%;
     top: auto;
     bottom: -10px;
     margin-right: -19px;
 }
-/* The colour of the indicators */
+
 .carousel-indicators li {
-    background: #cecece;
+    background: black;
+    width: 15%;
 }
 .carousel-indicators .active {
-    background: #428bca;
+
+    background: red;
 }
 
 #box {
@@ -91,4 +91,5 @@ section {
 #slider {
     background: url(../img/header.jpg) top center no-repeat;
 }
+
 

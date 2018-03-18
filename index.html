@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>Example Project with Ajax</title>
@@ -39,24 +40,44 @@
 
 <main>
     <section id="hero">
-        <div class="container">
+        <div class="container justify-content-center">
             <div class="row">
-                <div class="container text-center">
-                    <div id="weather">
-                    </div>
+                <div id="weather">
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<section id="box">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+<section class="reviews text-center bg-light">
+    <article>
+        <div class="container">
+            <h2 class="mb-5">Reviews</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="reviews-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/review.png" alt="review">
+                        <h5>Thomas</h5>
+                        <p class="font-weight-light mb-0">"Best app with weather ;)"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reviews-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/review.png" alt="review">
+                        <h5>Mat</h5>
+                        <p class="font-weight-light mb-0">"Thanks so much for making this app"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reviews-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/review.png" alt="review">
+                        <h5>Michael</h5>
+                        <p class="font-weight-light mb-0">"This is great!"</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </article>
 </section>
 
 
@@ -66,7 +87,6 @@
     </div>
 
 </footer>
-
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -83,7 +103,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   weatherCallback();
-  setInterval(weatherCallback, 3000);
+  setInterval(weatherCallback, 30000);
 </script>
 </body>
 </html>
